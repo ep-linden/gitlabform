@@ -167,6 +167,7 @@ class ConfigurationCore(ABC):
         """
         :return: merge more general config with more specific configs.
                  More specific config values take precedence over more general ones.
+                 Change
         """
         return dict(merge({}, more_general_config, more_specific_config))
 
