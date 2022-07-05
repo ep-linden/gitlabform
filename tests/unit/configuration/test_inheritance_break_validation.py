@@ -14,7 +14,7 @@ class TestInheritanceBreakValidation:
         projects_and_groups:
           "*":
             inherit: false
-            secret_variables:
+            variables:
               secret:
                 key: foo
                 value: bar
@@ -31,7 +31,7 @@ class TestInheritanceBreakValidation:
         ---
         projects_and_groups:
           "some_group/some_project":
-            secret_variables:
+            variables:
               inherit: false
               secret:
                 key: foo
